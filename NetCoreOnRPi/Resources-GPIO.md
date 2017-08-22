@@ -11,6 +11,6 @@ The first library is [https://github.com/unosquare/raspberryio](https://github.c
 The [Pi library](https://github.com/Petermarcu/Pi) is authored from Peter Marcu which is a member of the dotnet team. It has been derived from the [raspberry-sharp library](https://github.com/raspberry-sharp).
 
 # The WiringPI and BCM (Broadcom) convention
-[<img src="images/GPIO-WiringPI.png" alt="GPIO" style="width: 300px;"/>](images/GPIO-WiringPI.png)
-[<img src="images/GPIO-BCM.png" alt="GPIO" style="width: 300px;"/>](images/GPIO-BCM.png)
+[<img src="images/GPIO-WiringPI.png" alt="GPIO" width="300px"/>](images/GPIO-WiringPI.png)
+[<img src="images/GPIO-BCM.png" alt="GPIO" width="300px"/>](images/GPIO-BCM.png)
 
