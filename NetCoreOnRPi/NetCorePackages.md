@@ -34,7 +34,7 @@ To install the SDK or the Runtime proceed as follows:
 [https://www.microsoft.com/net/download/linux](https://www.microsoft.com/net/download/linux)
 
 The NetCore 2.0 runtime image for ARM-Linux is the following:
-https://dotnetcli.blob.core.windows.net/dotnet/Runtime/2.0.0/dotnet-runtime-2.0.0-linux-arm.tar.gz](https://dotnetcli.blob.core.windows.net/dotnet/Runtime/2.0.0/dotnet-runtime-2.0.0-linux-arm.tar.gz)
+[https://dotnetcli.blob.core.windows.net/dotnet/Runtime/2.0.0/dotnet-runtime-2.0.0-linux-arm.tar.gz](https://dotnetcli.blob.core.windows.net/dotnet/Runtime/2.0.0/dotnet-runtime-2.0.0-linux-arm.tar.gz)
 
 You may transfer the file using Bitvise or WinSCP. Otherwise you can download it directly from the Raspberry PI using the following command:
 ```
