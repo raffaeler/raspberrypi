@@ -27,8 +27,10 @@ The documentation and the repo include the instructions to install the Runtime a
 
 - The runtime is not required if you are going to publish the application as a "Self Contained Deployment" (SCD). It is instead required if you want to rely on a shared runtime for many applications. The decision is just yours. The advantage of the SCD is to be able to run different versions of your application and CoreCLR runtime side-by-side which can be precious in a production environment.
 
-
 - The sdk is not required to run an application. It is just needed if you want to create, compile and publish your application on the device itself.
 Since the Raspberry PI is a good prototyping environment, it can be a good idea to install it, but I did not because I prefer simulating a real production environment.
 
 **The Raspberry Pi image is now ready to deploy and running applications using .NET Core 2.0**
+To install the SDK or the Runtime proceed as follows:
+[https://www.microsoft.com/net/download/linux](https://www.microsoft.com/net/download/linux)
+
