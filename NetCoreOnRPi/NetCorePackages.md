@@ -71,17 +71,22 @@ git clone https://github.com/raffaeler/NetCore2App.git
 cd VanillaSolution/vanilla
 dotnet run
 ```
-Now create the binaries to be copied to the Raspberry PI:
-Open a console and enter the project folder.
-1. Small deployment, requiring the runtime installed:
+Now let's create the binaries to be copied to the Raspberry PI. Open a console and change directory to the project folder. You have two possibilities:
+A. Small deployment, requiring the runtime installed:
 ```
 dotnet publish -c Release -r linux-arm --self-contained=false
 ```
-2. Large deployment, totally self-contained
-The command retrieves the nuget dependencies, compiles the project in release mode and publishes the application and all the dependencies (including NetCore 2 itself) inside the folder `vanilla\bin\Release\netcoreapp2.0\linux-arm`.
+The `--self-contained=false` option specifies to copy all the project related binaries but not the runtime. This can be used only if the runtime has been previously installed on the machine.
+
+B. Large deployment, totally self-contained:
 ```
 dotnet publish -c Release -r linux-arm --self-contained
 ```
+The `--self-contained` options (equivalent to `--self-contained=true`) retrieves the nuget dependencies, compiles the project and publishes the application including the dependencies from NetCore 2.0 runtime.
+
+The `-r linux-arm` option tells the CLI to include the dependencies that are specific to the Linux operating system and the ARM 32 bit platform.
+
+The binaries are copied inside the folder  `vanilla\bin\Release\netcoreapp2.0\linux-arm` unless you specify the `-o` option followed by the desired folder.
 
 ### Case 2: download the pre-compiled binaries
 This will work only if you installed the Net Core 2 runtime.
