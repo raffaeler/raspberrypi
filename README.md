@@ -8,7 +8,8 @@ Most of the tutorials target setting up a Linux based operating system and the s
 
 ## Conferences
 This material is also part of the speeches I give in conferences.
-- Microsoft Ignite 2017 (Orlando)
+- Microsoft Ignite September 25-29, 2017 (Orlando, USA)
+- CodeCamp October 14, 2017 (Timisoara, Romania)
 
 ## Tutorials
 Here is the sequence of the tutorials:
