@@ -21,7 +21,7 @@ Here is the sequence of the tutorials:
 - Create and run an application inside a container: [DockerViaHub](NetCoreOnRPi/DockerViaHub.md)
 
 Tutorials for the 2.1 upcoming release of NetCore:
-- Installing the SDK [InstallingTheSDK](NetCoreOnRPi/InstallingTheSDK)
+- Installing the SDK [InstallingTheSDK](NetCoreOnRPi/InstallingTheSDK.md)
 - Remote Debugging with Visual Studio [DebuggingWithVS](NetCoreOnRPi/DebuggingWithVS.md)
 
 
