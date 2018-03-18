@@ -18,3 +18,9 @@ Here is the sequence of the tutorials:
 - Use the Camera: [Resources-Camera](NetCoreOnRPi/Resources-Camera.md)
 - Install the Docker CLI: [DockerOnPi](NetCoreOnRPi/DockerOnPi.md)
 - Create and run an application inside a container: [DockerViaHub](NetCoreOnRPi/DockerViaHub.md)
+
+Tutorials for the 2.1 upcoming release of NetCore:
+- Installing the SDK [InstallingTheSDK](NetCoreOnRPi/InstallingTheSDK)
+- Remote Debugging with Visual Studio [DebuggingWithVS](NetCoreOnRPi/DebuggingWithVS.md)
+
+
