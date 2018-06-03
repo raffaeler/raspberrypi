@@ -17,11 +17,13 @@ In Visual Studio 2017, configure the connection to the Raspberry PI in Tools - O
 
 ## Setting up the debuggee machine (Raspberry)
 The first step is to make a first debugging attempt so that a script file is copied on the Raspberry PI. Run an application on the Raspberry PI and try to attach it from Visual Studio (menu Debug - Attach to Process):
+
 [<img src="images/Attach-Process.png" alt="Attaching a process" width="350px"/>](images/Attach-Process.png)
 
 *Tip: you can leave the application running and open a second terminal to the Raspberry PI to run the other commands listed from now on.*
 
 After pressing attach, a request for the debugger type is issued with the following dialog. Please select the managed debugger and press OK.
+
 [<img src="images/Debugger-Kind.png" alt="Choosing the debugger type" width="250px"/>](images/Debugger-Kind.png) 
 
 After pressing OK, a script on the Raspberry PI is run to download the debugger engine.
@@ -50,6 +52,7 @@ curl -sSL https://aka.ms/getvsdbgshbeta | bash /dev/stdin -r linux-arm -v latest
 
 Now you can re-attach the debugger again selecting 'Reattach to Process' from the menu Debug.
 At this point set a breakpoint on the code and navigate the aspnetcore page to hit that breakpoint.
+
 [<img src="images/raspberry-debug.png" alt="Hitting a breakpoint" width="350px"/>](raspberry-debug.png)
 
 *Note: alternatively it is possible to download manually the debugger in an arbitrary folder and then create on the debugger machine (VS2017 or VS Code) a launch.json file specifying the all the debugger parameters, including the remote folder containing the debugger.*
