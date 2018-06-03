@@ -13,7 +13,7 @@ Install the latest SDK version 2.1 or greater as described [here](InstallingSDK.
 The debugging machine should install VS2017 or VSCode (latest releases) with the .NET Workload (VS) or the C# extension (VS Code).
 In Visual Studio 2017, configure the connection to the Raspberry PI in Tools - Options as for this dialog:
 
-[<img src="images/VS-Debugger1.png" alt="Debugger" width="300px"/>](images/VS-debugger1.png)
+[<img src="images/VS-debugger1.png" alt="Debugger" width="300px"/>](images/VS-debugger1.png)
 
 ## Setting up the debuggee machine (Raspberry)
 The first step is to make a first debugging attempt so that a script file is copied on the Raspberry PI. Run an application on the Raspberry PI and try to attach it from Visual Studio (menu Debug - Attach to Process):
