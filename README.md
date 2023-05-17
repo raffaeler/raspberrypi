@@ -8,7 +8,8 @@ Most of the tutorials target setting up a Linux based operating system and the s
 
 ## Conferences
 This material is also part of the speeches I give in conferences.
-- Microsoft Ignite 2017 (Orlando)
+- Microsoft Ignite September 25-29, 2017 (Orlando, USA)
+- CodeCamp October 14, 2017 (Timisoara, Romania)
 
 ## Tutorials
 Here is the sequence of the tutorials:
@@ -18,3 +19,9 @@ Here is the sequence of the tutorials:
 - Use the Camera: [Resources-Camera](NetCoreOnRPi/Resources-Camera.md)
 - Install the Docker CLI: [DockerOnPi](NetCoreOnRPi/DockerOnPi.md)
 - Create and run an application inside a container: [DockerViaHub](NetCoreOnRPi/DockerViaHub.md)
+
+Tutorials for the 2.1 upcoming release of NetCore:
+- Installing the SDK [InstallingTheSDK](NetCoreOnRPi/InstallingTheSDK.md)
+- Remote Debugging with Visual Studio [DebuggingWithVS](NetCoreOnRPi/DebuggingWithVS.md)
+
+
