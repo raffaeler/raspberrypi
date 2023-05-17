@@ -7,11 +7,11 @@
 
 There are several Linux distributions available for the RPi.
 The most popular is the "Raspbian" a version derived from the Debian.
-In this guide I used the "Raspbian Stretch with Desktop" because it is easier to administer locally. The setup should work also for the "Raspbian Stretch Lite" too.
+In this guide I used the "Raspbian Stretch with Desktop" because it is easier to administer locally. The setup works also for the "Raspbian Stretch Lite".
 
-1. [Download the latest available Raspbian image](https://www.raspberrypi.org/downloads/raspbian/). Ensure you are downloading a "Stretch" release which has been released in August 2017. This is important because .NET Core relies on the versions of the libraries that has been updated / patched in Stretch.
+1. [Download the latest available Raspbian image](https://www.raspberrypi.org/downloads/raspbian/). Ensure you are downloading a "Stretch" release which has been released in August 2017 or later. This is important because .NET Core relies on the versions of the libraries that has been updated / patched in Stretch.
 
-2. Extract the ZIP file. The file with the IMG extension must be "flashed" on a Micro-SD card. It is generally better high speed SDHC cards. In my demos I use the SanDisk Ultra 32GB Class 10 providing 80MB/sec.
+2. Extract the ZIP file. The file with the IMG extension must be flashed on a Micro-SD card. It is generally better high speed SDHC cards. In my demos I use the SanDisk Ultra 32GB Class 10 providing about 80MB/sec.
 
 3. Flash the Image on the SD card. I use the popular utility "Win32DiskImager". Verify carefully to flash the card and not another card. And then verify again because the flash operation overwrite the content completely.
 
@@ -20,9 +20,9 @@ These small monitors cost around 60$ for the 1024x600 resolution.
 If you are using a standard computer HDMI 1080p monitor, it works and you don't need to modify the config.txt as for the following step.
 
 4. If you have one **small** monitor, it may need to be configured manually via "config.txt" with the settings provided by the screen manufacturer. Standard HDMI 1080p monitors don't need this change. 
-After flashing the SDCard, close the Win32DiskImager, remove the card and re-insert it in the reader. This way you should be able to see and edit the config.txt from Windows.
-These are the settings I added at the very bottom of the config.txt file. Please check with your manufacturer's guide.
-If the next boot does not succeed, you can modify the config.txt again within Windows.
+  After flashing the SDCard, close the Win32DiskImager, remove the card and re-insert it in the reader. This way you should be able to see and edit the config.txt from Windows.
+  These are the settings I added at the very bottom of the config.txt file. Please check with your manufacturer's guide.
+  If the next boot does not succeed, you can modify the config.txt again within Windows.
 
 ```
 max_usb_current=1
@@ -33,7 +33,7 @@ hdmi_cvt 1024 600 60 6 0 0 0
 ```
 
 5. Put the SD Card in the Raspberry PI 3, ensure the peripherals (like the HDMI screen, an USB keyboard and USB mouse are plugged in), and finally boot by powering the RPi.
-Don't forget to plug an ethernet cable with the Internet connection. This is required to make software updates and install some mandatory packages. You can use wifi if you will. The visual configuration of the wifi from the Raspbian desktop  is simple (upper right portion of the desktop).
+  Don't forget to plug an ethernet cable with the Internet connection. This is required to make software updates and install some mandatory packages. You can use wifi if you will. The visual configuration of the wifi from the Raspbian desktop  is simple (upper right portion of the desktop).
 
 6. The Raspbian distribution will resize the main partition to fit the size of the SD Card automatically. Follow the instructions you will see on the screen.
 
@@ -48,8 +48,8 @@ passwd
 More info [here](https://www.raspberrypi.org/documentation/linux/usage/users.md)
 
 8. Enable SSHD and peripherals. The SSH connectivity is very useful to deploy your applications to the raspberry. Furthermore, the peripherals (such as the SPI, I2C, etc.) must be enabled before they can be used via software. This utility can be used to update the firmware too. It is generally better to save the SD content before updating the firmware. Since you just started installing, you can skip the backup.
-After this step you will need to reboot.
-The application used to configure the Raspberry PI, enable SSHD and the peripherals is the following
+  After this step you will need to reboot.
+  The application used to configure the Raspberry PI, enable SSHD and the peripherals is the following
 ```
 sudo raspi-config
 ```
