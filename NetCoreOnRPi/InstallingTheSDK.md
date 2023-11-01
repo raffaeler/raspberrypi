@@ -31,7 +31,18 @@ export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
 
 If you want to make it permanent, here there are the commands to type:
 ```
-// TODO
+# make sure you are not sudo-ing
+cd
+nano .bash_profile
+# if it doesn't exist, create the file
+# add the following lines.
+# The LD_LIBRARY_PATH export is needed only if you are compiling and installing 3rd parties libraries such as opencv.
+# When not defined, ASPNETCPRE_ENVIRONMENT defaults to 'Production'
+# DOTNET_ROOT is needed only if you are installing the sdk
+
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib/"
+export ASPNETCORE_ENVIRONMENT=Development
+export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
 ```
 
 Out of your curiosity:
